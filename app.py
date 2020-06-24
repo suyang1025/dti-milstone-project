@@ -44,7 +44,7 @@ def graph():
     p.xaxis.axis_label = 'Month'
     p.yaxis.axis_label = 'Price'
     script, div = components(p)
-    return str(ydata) 
+    return render_template('graph.html', script=script, div=div)
 
 if __name__ == '__main__':
   app.run(debug=True)
